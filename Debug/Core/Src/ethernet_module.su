@@ -1,0 +1,10 @@
+../Core/Src/ethernet_module.c:30:6:W5500_Reset	8	static
+../Core/Src/ethernet_module.c:37:6:W5500_Select	8	static
+../Core/Src/ethernet_module.c:41:6:W5500_Unselect	8	static
+../Core/Src/ethernet_module.c:45:6:W5500_ReadBuff	16	static
+../Core/Src/ethernet_module.c:49:6:W5500_WriteBuff	16	static
+../Core/Src/ethernet_module.c:53:9:W5500_ReadByte	16	static
+../Core/Src/ethernet_module.c:59:6:W5500_WriteByte	16	static
+../Core/Src/ethernet_module.c:63:6:W5500_Init	32	static
+../Core/Src/ethernet_module.c:86:5:W5500_Auth	1176	static
+../Core/Src/ethernet_module.c:151:6:W5500_GetStat	1072	static
