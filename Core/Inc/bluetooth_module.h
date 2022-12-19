@@ -10,6 +10,8 @@
 
 #include "stm32f4xx_hal.h"
 
-void processBluetoothData(SPI_HandleTypeDef *,  uint8_t *);
+#define RxBuf_SIZE   64
+
+void processBluetoothData(UART_HandleTypeDef *,  uint8_t *);
 
 #endif /* INC_BLUETOOTH_MODULE_H_ */

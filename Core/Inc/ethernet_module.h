@@ -14,6 +14,7 @@
 void W5500_Init(SPI_HandleTypeDef *);
 int W5500_Auth(char* , char* , char*);
 void W5500_GetStat(char*);
+int W5500_CheckPassword(char*);
 
 
 #endif /* INC_ETHERNET_MODULE_H_ */

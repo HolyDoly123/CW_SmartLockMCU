@@ -1,5 +1,5 @@
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o: \
- ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
+Core/Src/keyboard_module.o: ../Core/Src/keyboard_module.c \
+ ../Core/Inc/keyboard_module.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
  ../Core/Inc/stm32f4xx_hal_conf.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
@@ -28,7 +28,12 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o: \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+ ../Core/Inc/ethernet_module.h \
+ D:/Projects/STM32CubeIDE/WorkspaceMain/SmartLockF411CEU6/Lib/W5500/Inc/socket.h \
+ D:/Projects/STM32CubeIDE/WorkspaceMain/SmartLockF411CEU6/Lib/W5500/Inc/wizchip_conf.h \
+ D:/Projects/STM32CubeIDE/WorkspaceMain/SmartLockF411CEU6/Lib/W5500/Inc/w5500.h
+../Core/Inc/keyboard_module.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
@@ -58,3 +63,7 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o: \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+../Core/Inc/ethernet_module.h:
+D:/Projects/STM32CubeIDE/WorkspaceMain/SmartLockF411CEU6/Lib/W5500/Inc/socket.h:
+D:/Projects/STM32CubeIDE/WorkspaceMain/SmartLockF411CEU6/Lib/W5500/Inc/wizchip_conf.h:
+D:/Projects/STM32CubeIDE/WorkspaceMain/SmartLockF411CEU6/Lib/W5500/Inc/w5500.h:

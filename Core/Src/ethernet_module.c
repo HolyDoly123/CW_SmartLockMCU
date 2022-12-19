@@ -190,3 +190,45 @@ void W5500_GetStat(char* buf) {
 		buf[i] = buff[i];
 }
 
+int W5500_CheckPassword(char* password) {
+	uint8_t code = socket(CLIENT_SOCKET, Sn_MR_TCP, W5500_PORT, 0);
+	if (code != CLIENT_SOCKET)
+		return 0;
+	//открытие соединения
+	code = connect(CLIENT_SOCKET, serverIp, SERVER_PORT);
+	if (code != SOCK_OK) {
+		close(CLIENT_SOCKET);
+		return 0;
+	}
+
+	char req[7] = {0};
+	sprintf(req, "p %s", password);
+
+	uint16_t len = sizeof(req) - 1;
+	uint8_t *pbuff = (uint8_t*) &req;
+	while (len > 0) {
+		int32_t nbytes = send(CLIENT_SOCKET, pbuff, len);
+		if (nbytes <= 0) {
+			close(CLIENT_SOCKET);
+			return 0;
+		}
+		len -= nbytes;
+	}
+
+	char buff[1024] = {0};
+	len = sizeof(buff);
+	//получение ответа от сервера
+	while (1) {
+		int32_t nbytes = recv(CLIENT_SOCKET, (uint8_t*) &buff, sizeof(buff));
+		if (nbytes == SOCKERR_SOCKSTATUS)
+			break;
+		len -= nbytes;
+		if (len <= 0)
+			break;
+	}
+
+	//закрытие соединения
+	close(CLIENT_SOCKET);
+	return buff[0];
+}
+

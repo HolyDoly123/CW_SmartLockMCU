@@ -8,3 +8,4 @@
 ../Core/Src/ethernet_module.c:63:6:W5500_Init	32	static
 ../Core/Src/ethernet_module.c:86:5:W5500_Auth	1176	static
 ../Core/Src/ethernet_module.c:151:6:W5500_GetStat	1072	static
+../Core/Src/ethernet_module.c:193:5:W5500_CheckPassword	1064	static

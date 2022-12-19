@@ -1,0 +1,3 @@
+../Core/Src/keyboard_module.c:21:6:keypadInit	16	static
+../Core/Src/keyboard_module.c:25:6:processKeypadInput	16	static
+../Core/Src/keyboard_module.c:106:6:checkBuf	16	static

@@ -11,7 +11,7 @@
 char* login;
 char* password;
 
-void processBluetoothData(SPI_HandleTypeDef *huart1,  uint8_t *RxBuf) {
+void processBluetoothData(UART_HandleTypeDef *huart1,  uint8_t *RxBuf) {
 	strtok(RxBuf, " ");
 	login = strtok(NULL, " ");
 	password = strtok(NULL, " \n");
